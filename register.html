@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登録</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link href="favicon.png" rel="icon" type="image/x-icon">
+    <script>
+        // ページ読み込み時に登録情報をチェック
+        document.addEventListener("DOMContentLoaded", () => {
+            if (checkLocalStorage()) {
+                alert("登録情報が既に存在します。提出ページにリダイレクトします。");
+                window.location.href = "submit.html"; // 提出ページにリダイレクト
+            }
+        });
+    </script>
+</head>
+<body>
+    <form onsubmit="event.preventDefault(); saveToLocalStorage();">
+        <h1>登録</h1>
+        <label for="inp" class="inp">
+            <input type="text" id="email" placeholder="&nbsp;">
+            <span class="label">学園のメールアドレス</span>
+            <span class="focus-bg"></span>
+        </label>
+        <label for="inp" class="inp">
+            <input type="text" id="studentId" placeholder="&nbsp;">
+            <span class="label">学籍番号（N/Sは大文字）</span>
+            <span class="focus-bg"></span>
+        </label>
+        <label for="inp" class="inp">
+            <input type="text" id="name" placeholder="&nbsp;">
+            <span class="label">名前</span>
+            <span class="focus-bg"></span>
+        </label>
+        <button type="submit">登録</button>
+    </form>
+    <footer class="pr">
+        <ul class="py-bn">
+            <li class="py-1">
+                <a class="1-link" href="privacy.html">プライバシー</a>
+            </li>
+            <li class="py-1"><a class="2-link" href="https://n-highschool.slack.com/archives/C07DU8XLDHV">timesを見る</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

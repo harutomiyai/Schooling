@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>提出</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style2.css">
+    <link href="favicon.png" rel="icon" type="image/x-icon">
+    <script>
+        // ページ読み込み時に登録情報をチェック
+        document.addEventListener("DOMContentLoaded", () => {
+            if (!checkLocalStorage()) {
+                alert("登録情報が見つかりません。登録ページにリダイレクトします。");
+                window.location.href = "register.html"; // 登録ページにリダイレクト
+            }
+        });
+    </script>
+</head>
+<body>
+    <form onsubmit="event.preventDefault(); submitForm();">
+        <h1>提出ページ</h1>
+        <label for="inp" class="inp">
+            <input type="text" id="passphrase" placeholder="&nbsp;">
+            <span class="label">合言葉</span>
+            <span class="focus-bg"></span>
+        </label>
+        <button type="submit">提出</button>
+    </form>
+    <footer class="pr">
+    <ul class="py-bn">
+        <li class="py-1">
+        <a class="1-link" href="privacy.html">プライバシー</a>
+        </li>
+        <li class="py-1"><a class="2-link" href="https://n-highschool.slack.com/archives/C07DU8XLDHV">timesを見る</a></li>
+    </ul>
+    </footer>
+</body>
+</html>
