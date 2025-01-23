@@ -58,3 +58,24 @@ function checkLocalStorage() {
     const name = localStorage.getItem('name');
     return email && studentId && name;
 }
+
+
+// ...existing code...
+
+function openModal() {
+    document.getElementById('modal').style.display = 'block';
+}
+
+function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+}
+
+// モーダルウィンドウの外側をクリックしたときに閉じる
+window.onclick = function(event) {
+    const modal = document.getElementById('modal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
+
+// ...existing code...
