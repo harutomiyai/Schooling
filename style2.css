@@ -19,6 +19,10 @@ form {
     width: 400px;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* フォームの見出し */
 h1 {
     font-size: 1.5rem;
