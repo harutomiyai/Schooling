@@ -209,21 +209,6 @@ footer.pr ul li a:hover {
   opacity: 0.8;
 }
 
-/* スマホ向けのスタイル */
-@media screen and (max-width: 600px) {
-  body {
-    background-color: #fff;
-    height: auto;
-  }
-  h1 {
-    margin-top: 50px;
-  }
-
-  form {
-    width: 90%;
-  }
-
-}
 
 /* モーダル */
 .modal {
@@ -300,4 +285,104 @@ img.formimg {
 
 .modal-column {
     width: 48%;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.text {
+  text-align: center;
+  padding: 10px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.prev {
+  background-color: #ddd;
+    color: #fff;
+    border: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.5;
+    z-index: 10;
+}
+
+.next {
+  right: 0;
+  background-color: #ddd;
+    color: #fff;
+    border: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.4;
+    z-index: 10;
+}
+
+.prev, .next {
+  margin-top: 30%;
+}
+
+.prev:hover, .next:hover {
+  background-color: #888;
+}
+
+
+
+/* スマホ向けのスタイル */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: #fff;
+    height: auto;
+  }
+  h1 {
+    margin-top: 50px;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .prev, .next {
+    display: none;
+  }
 }
