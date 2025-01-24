@@ -271,7 +271,6 @@ img.formimg {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 .modal-header h2 {
@@ -366,7 +365,10 @@ img.formimg {
   background-color: #888;
 }
 
-
+.text a {
+  color: #000;
+  text-decoration: none;
+}
 
 /* スマホ向けのスタイル */
 @media screen and (max-width: 600px) {
