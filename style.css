@@ -383,9 +383,7 @@ a.access {
 }
 
 a.access:hover {
-  background-color: #333;
-  color: #fff;
-  text-decoration: none;
+  color: #999;
 }
 
 .circle a {
