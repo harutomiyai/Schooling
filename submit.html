@@ -26,7 +26,52 @@
             <span class="focus-bg"></span>
         </label>
         <button type="submit">提出</button>
+        <button type="button" class="about" onclick="openModal()">詳細</button>
     </form>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>このサイトについて</h2>
+                <img src="close.svg" class="close" onclick="closeModal()" alt="閉じる">
+            </div>
+            <div class="modal-body">
+                <div class="modal-column">
+                    <h3>詳細</h3>
+                    <p>このサイトでは、スクーリングの出席フォームを合言葉を入れるだけで送信することができるシステムです。</p>
+                    <p class="circle">このサイトの仕組みはユーザーのデータを端末のローカルストレージに保存し、それをGoogleフォームに転送する仕組みです。</p>
+                    <p class="circle">仕組みは<a href="https://tohru-portfolio.secret.jp/nschool/form.html">出席フォーム自動化サイト</a>の基盤をもとに作成されました。出席フォーム自動化サイトは、© 2024 Haruto Miyai Tohru Kawaguchiが作成しました。このサイトはコミュニティ活動、プログラミング班の成果物です。</p>
+                </div>
+                <div class="modal-column">
+                    <h3>他の作品</h3>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <a href="https://tohru-portfolio.secret.jp/nschool/form.html">
+                                <img src="image1.png" class="formimg" alt="出席フォーム自動化サイト">
+                            </a>
+                            <div class="text">
+                                <h3><a href="https://tohru-portfolio.secret.jp/nschool/form.html">出席フォーム自動化サイト</a></h3>
+                                <a href="https://tohru-portfolio.secret.jp/nschool/form.html" class="access">使ってみる</a>
+                            </div>
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="image2.png" class="formimg" alt="他の作品2">
+                            <div class="text">
+                                <h3>ONE TEAM</h3>
+                                <p>メンター、TA向けツール、授業の班わけを一瞬で行うツール。学園生は使うことができません。</p>
+                            </div>
+                        </div>
+                        <!-- 必要に応じてスライドを追加 -->
+                        <a class="prev" onclick="plusSlides(-1)">
+                            <img src="prev.svg" alt="前へ">
+                        </a>
+                        <a class="next" onclick="plusSlides(1)">
+                            <img src="next.svg" alt="次へ">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="pr">
     <ul class="py-bn">
         <li class="py-1">
