@@ -33,8 +33,7 @@
 ├── image2.png        # 画像2
 ├── close.svg         # 閉じるアイコン
 ├── next.svg          # 次へボタンアイコン
-├── prev.svg          # 戻るボタンアイコン
-└── .DS_Store         # （Macのシステムファイル）
+└── prev.svg          # 戻るボタンアイコン
 ```
 
 ## ライセンス
